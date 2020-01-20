@@ -32,7 +32,7 @@ var mes = prompt("Ingrese su mes de nacimiento");
         if(mes < actual.getMonth()){
             result--;
         }
-        console.log("Usted tiene",result,"años");
+        console.log("Usted tiene",result,"años actualmente");
     }
 
     edad(año,mes);
