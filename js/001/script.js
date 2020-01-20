@@ -21,7 +21,7 @@ nacimineto = prompt("ingrese su año de nacimiento");
         
 
 
-//investigar como aplicar Date 
+//modificar para agregar exactitud con meses y dias
 
 var año = prompt("Ingrese su año de nacimiento");
 var mes = prompt("Ingrese su mes de nacimiento");
