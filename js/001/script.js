@@ -26,13 +26,16 @@ nacimineto = prompt("ingrese su año de nacimiento");
 var año = prompt("Ingrese su año de nacimiento");
 var mes = prompt("Ingrese su mes de nacimiento");
 
-    function edad(año,mes){
+    function calcularEdad(){
+        mes--;
+        var edad = new Date(año,mes)
         var actual = new Date();
-        var result = 2020 - año;
-        if(mes < actual.getMonth()){
-            result--;
+        var resultYear = actual.getFullYear()- edad.getFullYear();
+        if(mes > actual.getMonth()){
+            resultYear--;
         }
-        console.log("Usted tiene",result,"años actualmente");
+        console.log("Usted tiene",resultYear,"años actualmente");
     }
 
-    edad(año,mes);
+    calcularEdad();
+
