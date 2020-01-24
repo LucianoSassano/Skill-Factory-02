@@ -58,10 +58,10 @@ var mes = prompt("Ingrese su mes de nacimiento");
     //callback!*/
 
 
-    var mes = {
-        nombre,
-        numero,
-        cantDias,
+    var Mes = {
+        nombre:'a',
+        numero:0,
+        cantDias:0,
         toString : function(){
             return "mes de : " + this.nombre + "numero :" + this.numero + "cantidad de dias:" + this.cantDias
         }
@@ -72,13 +72,14 @@ var mes = prompt("Ingrese su mes de nacimiento");
 
 
     function Calendario (){
-        name = name.toLower();
+        
 
         var continuar = 'y';
 
         while(continuar === 'y'){
-            mes = new mes;
+            var mes = new Mes();
             var name = prompt("ingrese nombre del mes");
+            name = name.toLowerCase();
             mes.nombre = name;
             var number = prompt("ingrese numero del mes");
             mes.numero = number;
@@ -97,9 +98,8 @@ var mes = prompt("Ingrese su mes de nacimiento");
 
         var i = 0;
         while(i > arregloMeses.length()){
-            arregloMeses[i].toString();
+            console.log(arregloMeses[i].toString());
         }
     }
 
-    Calendario();
     
